@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <audio id="backgroundAudio" loop>
+        <source src="Rajsthan-Tourism-Ad-Song-Version-1.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="cont">
+        <div class="slider animation" style="transform: translate3d(0%, 0px, 0px);">
+            <!-- Your slider content here -->
+        </div>
+        <ul class="nav"></ul>
+    </div>
+
+    <div data-target="right" class="side-nav side-nav--right"></div>
+    <div data-target="left" class="side-nav side-nav--left"></div>
+    <div class="loading">Loading...</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        const audio = document.getElementById('backgroundAudio');
+
+        // Autoplay when the page loads
+        document.addEventListener('DOMContentLoaded', function () {
+            audio.play();
+        });
+    </script>
+
+</body>
+
+</html>
