@@ -389,6 +389,31 @@ html {
   margin: 0;
   padding: 0;
 }
+.cont {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Add styles for the mobile slide button */
+.mobile-slide-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  display: none; /* Hide the button by default */
+}
+
+/* Add a media query for smaller screens (adjust max-width as needed) */
+@media screen and (max-width: 600px) {
+  .mobile-slide-btn {
+    display: block; /* Show the button on smaller screens */
+  }
+}
+
+
 
 body {
   background-color: #000;
